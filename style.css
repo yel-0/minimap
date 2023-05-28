@@ -1,0 +1,116 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #141414;
+  color: #fff;
+  font-family: "Roboto", sans-serif;
+}
+section {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+}
+.mainContent {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 15vw 8vw;
+  width: 60%;
+}
+@media (min-width: 992px) {
+  .mainContent {
+    padding: 15vw 8vw;
+  }
+}
+
+h1 {
+  font-size: clamp(18px, 3.2vw, 44px);
+}
+.myHeader {
+  width: 100%;
+  /* padding-left: 20vw;
+  padding-bottom: 20px; */
+  margin-bottom: 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  gap: 1rem;
+}
+li {
+  list-style-type: none;
+  margin-bottom: 2px;
+}
+.myAContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.toconnect {
+  text-decoration: none;
+  color: #fff;
+  margin-bottom: 2px;
+}
+.line {
+  overflow: hidden;
+}
+
+.working.line {
+  overflow: hidden;
+}
+
+.freelance.line {
+  overflow: hidden;
+}
+
+/* miniMap */
+
+.minimapContainer {
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  min-width: 20px;
+  z-index: 100;
+}
+
+.minimapSize {
+  position: relative;
+  z-index: 5;
+  border: 2px solid #141414;
+}
+
+.minimapViwer {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform-origin: 0 0;
+  z-index: 100;
+  border: 1px solid #fff;
+}
+.minimapcContent {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  transform-origin: 0 0;
+  border: 1px solid #141414;
+}
+
+/* For screens smaller than LG size */
+@media (max-width: 660px) {
+  .mainContent {
+    padding: 1rem;
+    width: 100%;
+  }
+  .minimapContainer {
+    display: none;
+  }
+}
